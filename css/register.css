@@ -1,0 +1,23 @@
+
+
+.reg_login {
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 70%;
+	text-align: center;
+}
+
+
+.reg_login main {
+	position: relative;
+}
+
+
+.reg_login main button {
+	position: absolute;
+	margin-left: 5px;
+}
+
+
+
+

@@ -1,0 +1,645 @@
+table {
+    border-collapse: collapse; /* 合并单元格边框 */
+    padding: 5px; /* 设置整个表格的内边距 */
+}
+
+td, th {
+    padding: 5px; /* 设置单元格的内边距 */
+}
+
+select {
+	padding: 0 10px 0 10px;
+	height: 30px;
+	/* 文字 背景 边角 */
+	text-align: center;
+	color: #fff;
+	background-color: #D97A0A;;
+	border-radius: 4px;
+	border-color: #F2880C #F2880C #F2880C #F2880C;
+	/* box-shadow: 1px 1px 10px rgb(0,0,0, 0.3); */
+	/* 其他 */
+	cursor: pointer;
+	box-sizing: border-box;
+	/* 动画 */
+	transition: all 0.25s;
+}
+
+
+select:hover {
+	background-color: #CB6F04;
+	border-radius: 7px;
+	box-shadow: 1px 1px 10px rgb(0,0,0, 0.3);
+}
+
+select option {
+	text-align: left;
+	cursor: pointer;
+}
+
+
+
+
+
+/* 功能title */
+.forum header {
+	margin: 1% auto 1% auto;
+	width: 96%;
+	height: 50px;
+	border: 4px solid #A0A0A0;
+	border-radius: 10px;
+	background-color: #FEEBB2;
+	box-sizing: border-box;
+}
+
+.forum main {
+	margin: 0 auto;
+	width: 96%;
+}
+
+
+
+
+
+
+/* 发帖按钮 */
+.post_topic {
+	transform: translate(10%, 20%);
+}
+
+.post_topic a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/* 列表帖子 */
+.forum main .post {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 5px 5px 5px 5px;
+	height: 76px;
+	border: 2px solid #FDD285;
+	border-radius: 10px;
+	background-color: #FCDE9B;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+/* 帖子左侧信息 */
+.forum .post .post_info {
+	float: left;
+	height: 100%;
+	/* background-color: aquamarine; */
+	overflow: hidden;
+}
+
+
+/* 帖子标题 */
+.forum .post .topic_title {
+	color: #2E59B3;
+	font-size: 18px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.forum .post .topic_title:hover {
+	color: #FC6403;
+	text-decoration: underline;
+}
+
+/* 帖子作者和时间 */
+.forum .post .topic_auther,.date {
+	color: #9a8a81;
+	font-size: 14px;
+}
+
+
+
+/* 帖子缩略内容 */
+.forum .post .topic_content {
+	color: #3f0f08;
+	font-size: 14px;
+	/* background-color: aqua; */
+}
+
+
+/* 帖子右侧缩略图 */
+.forum .post .preview_img {
+	float: left;
+	height: 100%;
+	/* background-color: red; */
+	box-sizing: border-box;
+}
+
+/*  图片缩略显示 */
+.forum .post .preview_img img {
+	float: left;
+	margin-left: 10px;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* 帖子最新回复 */
+.forum .post .new_post {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 15%;
+	text-align: right;
+	color: #9a8a81;
+	font-size: 14px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	transform: translate(-5%, 15%);
+}
+
+
+
+
+
+/* 帖子卡片 */
+.forum .post_card {
+	float: left;
+	width: 20%;
+	padding: 6px;
+	border: solid #D38550;
+	border-radius: 4px;
+	background-color: #FCDE9B;
+	transform: scale(0.99);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+/* 封面 */
+.forum .post_card .cover {
+	width: 100%;
+	aspect-ratio: 16/9;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.forum .post_card .cover img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+/* 标题 */
+.forum .post_card .topic {
+	display: block;
+	height: 45px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	overflow: hidden;
+	text-overflow: clip;
+}
+
+/* 帖子信息行，包含作者头像，名字，发布时间 */
+.forum .post_card .info {
+	margin-top: 2px;
+}
+
+/* 用户头像 */
+.forum .post_card .avatar {
+	float: left;
+	margin-top: -5px;
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+
+
+/* 日期 */
+.forum .post_card .date {
+	float: right;
+	margin-top: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 列表式瀑布流最底部loading */
+.forums_loading {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.forums_loading span {
+	border: 2px solid #53b0d6;
+	border-radius: 4px;
+	background-color: #7cc3e0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 修改帖子按钮 */
+.forum .forum_bt {
+	float: right;
+	margin-left: 5px;
+	transform: translate(-10%, 20%);
+}
+
+/* 帖子数据 */
+.forum .data li {
+	display: inline-block;
+	float: left;
+	margin-left: 15px;
+	list-style: none;
+	transform: translate(0, 50%);
+}
+
+
+
+
+/* 
+
+
+		帖子内数据显示
+
+
+*/
+
+
+.auther_info {
+	float: left;
+	width: 15%;
+	border-radius: 10px;
+	background-color: #FEDE9A;
+}
+
+/* 作者名字 */
+.auther_info .name {
+	display: block;
+	margin-top: 5px;
+	text-align: center;
+	/* background-color: aqua; */
+}
+
+
+/* 作者头像 */
+.auther_info .avatar {
+	width: 100%;
+	border: white 6px solid;
+	border-radius: 15%;
+	transform: scale(0.95);
+	box-sizing: border-box;
+}
+
+.auther_info .avatar:fullscreen {
+	border: 0px;
+}
+
+.auther_info .avatar:hover {
+	cursor: pointer;
+}
+
+/* 作者个性签名 */
+.auther_info .auther_sign {
+	display: block;
+	margin-top: 5px;
+	font: bold;
+	font-size: large;
+	color: #888888;
+	transform: scale(0.95);	
+}
+
+/* 作者数据 */
+.auther_info .auther_data {
+	position: relative;
+	margin-top: 20px;
+	margin-left: 5%;
+	line-height: 1.6em;
+	font-size: 15px;
+	list-style: none;
+	/* background-color: aqua; */
+	transform: scale(0.95);	
+}
+
+/* 数据显示单行 */
+.auther_info .auther_data li {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* 作者数据右上角Panny */
+.auther_info .auther_data li:first-child img {
+	position: absolute;
+	top: -30%;
+	right: -30%;
+	width: 100%;
+	transform: scale(0.7);
+	-webkit-user-drag: none;
+}
+
+
+/* 分割线签名图片 */
+.auther_info .split_line {
+	width: 100%;
+	border: white 6px solid;
+	border-radius: 4%;
+	cursor: pointer;
+	transform: scale(0.95);
+	box-sizing: border-box;
+}
+
+/* 全屏聚焦 */
+.auther_info .split_line:fullscreen {
+	border: 0;
+}
+
+
+
+/* 作者最喜欢的作品 */
+.auther_info .auther_loves_story {
+	text-align: center;
+}
+
+/* 蓝色盒子 */
+.auther_info .auther_loves_story .box {
+	float: none;
+	margin: 0 auto;
+	list-style: none;
+	width: 40%;
+}
+
+
+/* 作品推荐每一个作品 */
+.auther_info .auther_loves_story .recommend_ {
+	text-align: left;
+	padding-left: 10%;
+}
+
+
+.auther_info .auther_loves_story .recommend_ span {
+	display: block;
+	width: 90%;	
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: clip;
+}
+
+
+
+
+
+
+/* 帖子内容 */
+.forum main .content{
+	float: left;
+	margin-left: 16px;
+	width: 83.5%;
+	/* background-color: aqua; */
+}
+
+
+
+
+
+
+
+
+/* 帖子内图片 */
+.forum main .content img {
+	width: 50%;
+	box-sizing: border-box;
+	cursor: pointer;
+	/* background-color: aqua; */
+}
+
+
+
+/* 图片放大 */
+.fullscreen {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 105%;
+	height: 105%;
+	transform: translate(-50%, -50%);
+	object-fit: contain;
+	background-color: black;
+	z-index: 9999;
+}
+
+
+/* 图片模糊防剧透用 */
+.defense_img {
+	display: inline;
+	box-sizing: border-box;
+}
+
+.defense_img img {
+	filter: blur(10px);
+	transition: all 0.3s;
+	box-sizing: border-box;
+}
+
+.defense_img img:hover {
+	filter: blur(0px);
+}
+
+
+
+
+
+
+
+
+
+
+/* 回复外盒 */
+.post_card_ {
+	position: relative;
+	padding: 3px;
+	width: 100%;
+	border-radius: 5px;
+	/* background-color: aqua; */
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+/* 回复者信息 */
+.post_card_ .poster_info {
+	float: left;
+	width: 15%;
+	border-radius: 10px;
+	background-color: #FEDE9A;
+}
+
+/* 回复者头像 */
+.post_card_ .poster_info .avatar {
+	width: 100%;
+	border: white 2px solid;
+	border-radius: 15%;
+	transform: scale(0.95);
+	box-sizing: border-box;
+}
+
+/* 回复者名字 */
+.post_card_ .poster_info .name {
+	display: block;
+	text-align: center;
+}
+
+
+/* 回复rid */
+.post_card_ .poster_info .rid {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* 回复内容 */
+.post_card_ .post_content {
+	display: inline-block;
+	padding: 5px;
+	width: 84%;
+}
+
+/* 底部回复DOM */
+.post_card_ .bottom_ {
+	margin-left: 15%;
+}
+
+.post_card_ .bottom_ .reply_content {
+	width: 30%;
+}
+
+
+
+
+/* 帖子内最底下的功能部分 */
+.forum main .bottom {
+	padding: 5px 0 0 15%;
+	width: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+
+/* 帖子下的回复框 */
+.forum main .bottom .reply_content {
+	width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 资源收入版块gal信息 */
+.gal_info {
+	position: relative;
+	background: url(../data/imgs/news.png) no-repeat center center;
+}
+
+/* 文本介绍 */
+.gal_info_text {
+	font-size: large;
+	line-height: 1.5em;
+}
+
+
+.gal_info li {
+	list-style: none;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+.gal_info .score {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 2px 2px 6px 2px;
+	color: #fff;
+	text-align: left;
+	cursor: pointer;
+	background: #55589A;
+	border-color: #2B2C63;
+	border-radius: 4px;
+}
+
+
+
+
+
+
+
+/* 资源收入底部下载按钮 */
+.forum .content .download {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+.forum .content .download img {
+	cursor: pointer;
+}
+.forum .content .download span {
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* 帖子内op播放器 和 帖子封面 */
+.player_window {
+	display: inline-block;
+	position: relative;
+	aspect-ratio: 16/9;
+}
+
+.player_window video {
+	width: 100%;
+	border: white 6px solid;
+	border-radius: 20px;
+	transform: scale(0.97);
+	box-sizing: border-box;
+}
+
+.player_window video:fullscreen {
+	border: 0px;
+}

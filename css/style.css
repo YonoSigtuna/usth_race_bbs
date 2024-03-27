@@ -1,0 +1,394 @@
+
+body {
+	overflow-x: hidden;
+	/* animation-name: show;
+	animation-duration: 0.3s; */
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+		transform: translate(0, 100%)
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0, 0)
+	}
+}
+
+
+/* 清除内外边距 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* pre格式 */
+pre {
+    color: #2b2b2b;
+    padding: 20px;
+	font-size: 16px;
+    font-family: Consolas, 黑体, "Liberation Mono", Menlo, monospace, Courier;
+	background-color: #ddd;
+	border-radius: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+
+
+
+
+/* 卷轴分割线 */
+.title_split_line {
+	display: inline-flex;
+	width: auto;
+	margin-top: 20px;
+	margin-left: 50%;
+	border: 6px solid transparent;
+	border-image: url(../data/imgs/scrollborder.png) 24 fill repeat;
+	border-image-width: 24px;
+	justify-content: center;
+	align-items: center;
+	transform: translate(-50%, 0);
+	overflow: visible;
+}
+
+.title_split_line span {
+	font-size: 30px;
+	font-weight: bold;
+	white-space: nowrap;
+	text-align: center;
+	text-shadow: 0px 2px 1px #d5864f;
+}
+
+
+
+
+
+
+
+
+/* TAG盒子 */
+.box_father {
+	overflow: hidden;
+}
+
+
+.box span {
+	margin-left: 4%;
+}
+
+	
+.box {
+	margin: 0 2px 2px 2px;
+	padding: 0 3px 0 3px;
+	float: left;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	background: #7cc3e0;
+	border-color: #53b0d6;
+	border-radius: 4px;
+	transition: all 0.25s;
+}
+
+.box2 {
+	margin: 0 2px 2px 2px;
+	padding: 0 3px 0 3px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	background: #76C688;
+	border-color: #44B668;
+	border-radius: 4px;
+	transition: all 0.25s;
+}
+
+.box:hover {
+	border-radius: 7px;
+	box-shadow: 1px 1px 10px rgb(0,0,0, 0.3);
+	transform: translate(0, -2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 板块边框 */
+.board {
+	background-color: #fff6d4;
+	border: 24px solid wheat;
+	border-image: url(../data/imgs/border.png) 24 stretch;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+/* header */
+.board header {
+	padding: 0.5em;
+	border-radius: 10px;
+	background-color: #FEDE9A;
+	overflow: hidden;
+}
+
+/* 板块content */
+.board main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* 其他 */
+.else {
+	margin: 2% auto;
+	width: 70%;
+	text-align: center;
+}
+
+
+	
+
+
+
+/*  默认按钮 */
+button {
+	padding: 0 10px 0 10px;
+	height: 30px;
+	/* 文字 背景 边角 */
+	text-align: center;
+	color: #fff;
+	background-color: #D97A0A;;
+	border-radius: 4px;
+	border-color: #F2880C #F2880C #F2880C #F2880C;
+	/* 其他 */
+	cursor: pointer;
+	box-sizing: border-box;
+	/* 动画 */
+	transition: all 0.25s;
+}
+
+button:hover {
+	background-color: #CB6F04;
+	border-radius: 7px;
+	box-shadow: 1px 1px 10px rgb(0,0,0, 0.3);
+	/* 动画 */
+	transform: translate(0, -2px);
+}
+
+
+
+
+/* 第二套，蓝色按钮 */
+.button2 {
+	padding: 0 10px 0 10px;
+	height: 30px;
+	/* 文字 背景 边角 */
+	text-align: center;
+	color: #fff0ba;
+	background: #235ab4;
+	border-radius: 4px;
+    border-color: #2765c9 #1f4f9f #1f4f9f #2765c9;
+	/* 其他 */
+	cursor: pointer;
+	box-sizing: border-box;
+	/* 动画 */
+	transition: all 0.25s;
+	}
+
+	.button2:hover {
+	background-color: #234EAE;
+	border-radius: 7px;
+	box-shadow: 1px 1px 10px rgb(0,0,0, 0.3);
+	/* 动画 */
+	transform: translate(0, -2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+/* 默认input */
+input {
+	height: 30px;
+	padding: 0 5px 0 5px;
+	background-color: #FDFAEB;
+	border-radius: 4px;
+	border-color: #F2E38F;
+}
+
+
+input:hover {
+	background-color: #FEF0BB;
+	border-color: #F6ECB4;
+}
+
+
+input:focus {
+	background-color: #FEF0BB;
+	outline-color: #F6ECB4;
+}
+
+
+
+
+
+
+
+
+
+/* 用户头像 */
+.avatar_big {
+	margin: 1% 0 -1% 50%;
+	width: 30%;
+	border: white 6px solid;
+	border-radius: 15%;
+	transform: translate(-50%, 0);
+	transition: border 0.75s, border-radius 0.75s;
+	box-sizing: border-box;
+}
+
+/* 头像过渡 */
+.avatar_big:hover {
+	border: #EEEEEE 4px solid;
+	border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 终端蒙版 */
+.cmd {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: all 0.25s;
+}
+
+/* 终端 */
+.cmd .board {
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* 终端title */
+.cmd .board header {
+	cursor: move;
+	text-align: center;
+}
+
+
+/* 终端关闭按钮 */
+.cmd .close {
+	position: absolute;
+	top: 2%;
+	right: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.space {
+	margin: 0 1px 0 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.show_bg {
+	position: fixed;
+	right: 0.5%;
+	bottom: 0.5%;
+	border: 10px solid wheat;
+	border-image: url(../data/imgs/border_6.png) 10 stretch;
+	transform: scale(0.65);
+	background-color: #fff6d4;
+}

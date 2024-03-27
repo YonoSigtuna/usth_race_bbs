@@ -1,0 +1,459 @@
+
+
+
+
+
+
+
+
+
+
+
+/* 小版块最新发帖 */
+.newest_topic {
+	color: black;
+}
+
+.newest_topic:visited {
+	color: #666666;
+}
+
+
+
+
+
+.op {
+	margin-top: 2%;
+	width: 100%;
+	height: 73%;
+	/* background-color: aqua; */
+}
+
+
+.op video {
+	margin-left: 4%;
+	width: 70%;
+	height: 100%;
+	background-color: black;
+	border: 12px solid wheat;
+	border-image: url(../data/imgs/border_1.png) 24 stretch;
+	border-image-width: 24px;
+	aspect-ratio: 16/9;
+	box-sizing: border-box;
+}
+
+
+.op video:fullscreen {
+	border: 0px;
+}
+
+.op li:hover {
+	background-color: #FEDE9A;
+}
+
+
+
+
+/* 推荐栏 */
+.recommend {
+	float: right;
+	margin-right: 4%;
+	width: 20%;
+	height: 100%;
+	border-image: url(../data/imgs/border_2.png) 24 stretch;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+
+.recommend header {
+	text-align: center;
+}
+
+
+.recommend main li {
+	cursor: pointer;
+	text-indent: 1em;
+	line-height: 2em;
+	/* 文本强制单行 */
+	white-space: nowrap;
+	/* 超出部分隐藏 */
+	overflow: hidden;
+	/* 省略号替代 */
+	text-overflow: ellipsis;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 随机OP */
+.random_op {
+	margin-top: 1%;
+	margin-left: 4%;
+	margin-right: 4%;
+	width: 92%;
+	border: 6px solid transparent;
+	border-image: url(../data/imgs/border_5.png) 24 stretch;
+	border-image-width: 24px;
+	box-sizing: border-box;
+}
+
+
+.random_op img {
+	margin-top: 0.9%;
+	margin-left: 1%;
+	margin-right: -0.5%;
+	margin-bottom: 0.6%;
+	width:19.2%;
+	cursor: pointer;
+	border-radius: 5px;
+	aspect-ratio: 16/9;
+}
+
+
+
+/* 
+.random_op span {
+	position: absolute;
+	top: 50%;
+	right: 0.5%;
+	height: 80%;
+	cursor: pointer;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	letter-spacing: 5px;
+	color: #FEF0BB;
+	writing-mode: vertical-rl; 设置文字垂直排列
+  	text-orientation: upright; 设置文字方向为正立
+	background-color: #2450AF;
+	border: 2px salmon solid;
+	border-radius: 5px;
+	border-color: #2765c9 #1f4f9f #1f4f9f #2765c9;
+} */
+
+
+
+
+
+
+
+
+
+
+/* 最新发帖 */
+.sub_block main .newest_topics li {
+	line-height: 24px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.sub_block main .newest_topics li a {
+	color: black;
+}
+
+.sub_block main .newest_topics li a:visited {
+	color: #666666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Title */
+.title {
+	position: relative;
+	height: 7%;
+	margin-top: 56%;
+	margin-left: 30%;
+	margin-right: 30%;
+	border: 6px solid transparent;
+	border-image: url(../data/imgs/scrollborder.png) 24 fill repeat;
+	border-image-width: 24px;
+}
+
+.title span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	white-space: nowrap;
+	text-shadow: 0px 2px 1px #d5864f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 大版块 */
+.block {
+	margin-top: 1%;
+	margin-left: 2.5%;
+	width: 76%;
+}
+
+
+.block main {
+	margin-bottom: -10%;
+}
+
+
+/* 版块title */
+.block header span:first-child{
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* sign */
+.block header span:last-child {
+	float: right;
+	margin-top: 5px;
+	color: #666666;
+	font-size: small;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* 右侧操作版块 */
+.sub_block {
+	float: right;
+	margin-top: 1%;
+	margin-right: 2.5%;
+	width: 18.5%;
+	border-image: url(../data/imgs/border_3.png) 24 stretch;
+}
+
+.sub_block header {
+	text-align: center;
+}
+
+/* 审核内容 */
+.sub_block main ul li {
+	display: block;
+	margin-left: 4%;
+	list-style: none;
+	line-height: 2em;
+}
+
+
+
+.sub_block main ul li button {
+	float: right;
+}
+
+
+
+.sub_block main span {
+	float: right;
+	margin-right: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 小版块 */
+.section {
+	display: inline-block;
+	width: 49.5%;
+	box-sizing: border-box;
+}
+
+/* 右侧版块 */
+.section_r {
+	float: right;
+}
+
+
+.section img {
+	float: left;
+	margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+ /* 小版块title */ 
+.section .name {
+	display: block;
+	color: #333;
+	font-weight: bold;
+}
+
+/* 版块名字 */
+.section .name a {
+	color: #333;
+	text-decoration: none;
+}
+
+.section .name a:hover {
+	color: #FC6403;
+	text-decoration: underline;
+}
+
+/* 版块title发帖数 */
+.section .name span {
+	float: right;
+	margin-right: 5%;
+	color: #666666;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+
+
+
+
+/* 版块介绍 */
+.section .info {
+	display: block;
+	color: #666666;
+	font-size: 13px;
+	/* 文本强制单行 */
+	white-space: nowrap;
+	/* 超出部分隐藏 */
+	overflow: hidden;
+	/* 省略号替代 */
+	text-overflow: ellipsis;
+}
+
+
+
+
+/* 版块数据 */
+.section .data {
+	display: block;
+	color: #666666;
+	font-size: 13px;
+	/* 文本强制单行 */
+	white-space: nowrap;
+	/* 超出部分隐藏 */
+	overflow: hidden;
+	/* 省略号替代 */
+	text-overflow: ellipsis;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 资讯推送 */
+.news {
+	float: left;
+	margin: 1% 2.5% 0 2.5%;
+	height: 40%;
+	width: 95%;
+	background-color: rgba(255, 255, 255, .5);
+	border: 12px solid wheat;
+	border-image: url(../data/imgs/border_6.png) 24 stretch;
+	border-image-width: 24px;
+	box-sizing: border-box;
+}
+
+.news header {
+	text-align: center;
+	color: #7c56e2;
+	font-size: 2em;
+	background-color: transparent;
+	/* 文本强制单行 */
+	white-space: nowrap;
+	/* 超出部分隐藏 */
+	overflow: hidden;
+	/* 省略号替代 */
+	text-overflow: ellipsis;
+}
+
+
+/*  下划线  */
+.news div {
+	margin: 0 auto;
+	width: 92%;
+	height: 3px;
+	background-color: #9BBD46;
+}
+
+.news main {
+	display: block;
+	margin: 2.5% auto;
+	width: 96%;
+	height: 100%;
+}
