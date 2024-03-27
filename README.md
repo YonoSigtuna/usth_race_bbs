@@ -1,3 +1,6 @@
+# 开源地址
+https://github.com/YonoSigtuna/usth_race_bbs
+
 # 演示网站
 http://usth.fleeworld.top
 
